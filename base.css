@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+* {
+	font-family: 'Nunito', sans-serif;
+	margin:0; 
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none; 
+	border:none;
+	text-transform: capitalize;
+	transition: all .2s linear; /* smoothen all default animations */
+}
+
+*::selection {
+	background: cornflowerblue;
+	color: #333;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%; /* responsive font size */
+	overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+	width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+	background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: cornflowerblue;
+	border-radius: .5rem;
+}
+
+body {
+	background:#010409;
+	overflow-x: hidden;
+	padding-left: 35rem; /* pad to left based on sidebar size */
+}
+
+section {
+	min-height: 100vh;
+	padding:1rem;
+}
+
+button {
+	padding:.7rem 3rem;
+	background: #333;
+	color:#fff;
+	cursor: pointer;
+	margin-top: 1rem;
+	font-size: 2rem;
+	border-radius: 5rem;
+}
+
+button i {
+	padding:0 .5rem;
+	font-size: 1.8rem;
+}
+
+button:hover {
+	background: cornflowerblue;
+}
+
+.heading {
+	text-align: center;
+	margin:0 6rem;
+	font-size: 4rem;
+	padding:1rem;
+	border-bottom: .1rem solid #fff4;
+	color:#fff;
+}
+
+.heading span {
+	color: cornflowerblue;
+}
+
+#mobile-menu {
+	position: fixed;
+	top:2rem; right:2rem;
+	background: #333;
+	color:#fff;
+	cursor: pointer;
+	font-size: 2.5rem;
+	padding:1rem 1.5rem;
+	z-index: 1000;
+	display: none;
+}
+
+.to-top {
+	position: fixed;
+	bottom: 2rem; right: 2rem;
+	z-index: 100;
+	opacity: 0; /* dont show initially*/
+	pointer-events: none; /* make it unclickable initially */
+	font-size: 5rem;
+	color:  cornflowerblue;
+}
+
+.to-top.active {
+	opacity: 1; /* show it after some scroll */
+	pointer-events: auto; /* make it clickable after some scroll */
+}
+
+
+/* media queries  */
+
+/* tablet and mobile view*/
+@media (max-width:768px) {
+	html {
+		font-size: 48%;
+	}
+	.intro {
+		padding:1rem 4rem;
+	}
+	body {
+		padding:0;
+	}
+	/* hide sidebar by default */
+	aside {
+		left:-120%;
+	}
+	/* show menu on tablet   */
+	#mobile-menu {
+		display: block;
+	}
+	/* when sidebar is shown */
+	aside.toggle {
+		left:0%;
+	}
+}
+/* mobile devices */
+@media (max-width:480px) {
+	aside {
+		width: 100vw;
+	}
+	.heading {
+		margin:0 3rem;
+	}
+	.profile .row .counter .box {
+		width: 100%;
+	}
+	.education .box-container .box {
+		width:100%;
+	}
+	.project .box-container .box {
+		width:100%;
+	}
+	.contact .row form {
+		margin:3rem 0;
+	}
+}

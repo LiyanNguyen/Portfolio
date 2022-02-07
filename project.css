@@ -1,0 +1,26 @@
+.project .box-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding:2rem 0;
+}
+
+.project .box-container .box{
+	height: 20rem;
+	width:26rem;
+	border-radius: 1rem;
+	margin:2rem;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.project .box-container .box img{
+	height:100%;
+	width:100%;
+	object-fit: cover;
+}
+
+.project .box-container .box:hover img{
+	transform: scale(1.2);
+}

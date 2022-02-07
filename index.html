@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jose Leandrino Anajao</title>
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="intro.css">
+	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="education.css">
+	<link rel="stylesheet" href="project.css">
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="sidebar.css">
+	<link rel="stylesheet" href="base.css">
+</head>
+<body>
+<!-- Sidebar -->
+<aside>
+	<figure class="user">
+		<img src="images/pic.jpg" alt="">
+		<h3>jose anajao</h3>
+		<figcaption>front end developer</figcaption>
+	</figure>
+	<menu>
+		<li><a href="#intro" class="active">introduction</a></li>
+		<li><a href="#profile">profile</a></li>
+		<li><a href="#education">education</a></li>
+		<li><a href="#project">projects</a></li>
+		<li><a href="#contact">contact</a></li>
+	</menu>
+</aside>
+<!-- Mobile View Menu -->
+<div id="mobile-menu" class="fas fa-bars" onclick="toggleMobileViewMenu()"></div>
+<!-- Profile Section -->
+<section class="intro" id="intro">
+	<h3>Hello !</h3>
+	<h1>I'm <span>Jose Anajao</span></h1>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt aspernatur fugiat minus enim ullam repudiandae sint sed magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, at.
+	</p>
+	<a href="#profile"><button>my profile <i class="fas fa-user"></i></button> </a>
+</section>
+<!-- Profile Section -->
+<section class="profile" id="profile">
+<h1 class="heading">my <span>profile</span></h1>
+<div class="row">
+	<div class="info">
+		<h3> <span> full name : </span> jose leandrino anajao </h3>
+		<h3> <span> age : </span> 23 </h3>
+		<h3> <span> qualification : </span> Bachelor's Degree in Computer Science </h3>
+		<h3> <span> position : </span> front-end developer </h3>
+		<h3> <span> languages : </span> english, tagalog, japanese </h3>
+		<a href="#"><button> download CV <i class="fas fa-download"></i> </button></a>
+	</div>
+	<div class="counter">
+		<div class="box">
+			<span>HTML5</span>
+			<h3>search engine optimization</h3>
+		</div>
+		<div class="box">
+			<span>CSS</span>
+			<h3>responsive web design</h3>
+		</div>
+		<div class="box">
+			<span>JavaScript</span>
+			<h3>best practices and coding conventions</h3>
+		</div>
+	</div>
+	<div class="counter">
+		<div class="box">
+			<span>Bootstrap</span>
+			<h3>CSS component framework</h3>
+		</div>
+		<div class="box">
+			<span>Tailwind</span>
+			<h3>CSS utility framework</h3>
+		</div>
+		<div class="box">
+			<span>Vue</span>
+			<h3>javaScript front-end framework</h3>
+		</div>
+	</div>
+</div>
+<!-- Education Section -->
+</section>
+<section class="education" id="education">
+<h1 class="heading"> my <span>education</span> </h1>
+<div class="box-container">
+	<div class="box">
+		<i class="fas fa-graduation-cap"></i>
+		<span>2014 - 2015</span>
+		<h3>University of Otago</h3>
+		<p style="font-style: italic;">Foudation Programme in Applied Sciences</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+	</div>
+	<div class="box">
+		<i class="fas fa-graduation-cap"></i>
+		<span>2016 - 2018</span>
+		<h3>MDIS Singapore</h3>
+		<p style="font-style: italic;">Diploma in Information Technology and Business</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+	</div>
+	<div class="box">
+		<i class="fas fa-graduation-cap"></i>
+		<span>2018 - 2021</span>
+		<h3>University of Wollogong</h3>
+		<p style="font-style: italic;">Bachelor's Degree in Computer Science</p>
+		<p>UOW is one of the world's top modern universities, offering excellence in teaching, learning, and research, and an unparalleled student experience</p>
+	</div>
+</div>
+</section>
+<!-- Project Section -->
+<section class="project" id="project">
+<h1 class="heading"> my <span>projects</span> </h1>
+<div class="box-container">
+	<div class="box">
+		<img src="" alt="">
+	</div>
+	<div class="box">
+		<img src="" alt="">
+	</div>
+	<div class="box">
+		<img src="" alt="">
+	</div>
+	<div class="box">
+		<img src="" alt="">
+	</div>
+	<div class="box">
+		<img src="" alt="">
+	</div>
+	<div class="box">
+		<img src="" alt="">
+	</div>
+</div>
+<!-- Contact Section -->
+</section>
+<section class="contact" id="contact">
+<h1 class="heading"> <span>contact</span> me </h1>
+<div class="row">
+	<div class="content">
+		<h3 class="title">contact info</h3>
+		<div class="info">
+			<h3> <i class="fas fa-envelope"></i> liyannguyenn@gmail.com </h3>
+			<h3> <i class="fas fa-phone"></i> 09500900929 </h3>
+			<h3> <i class="fas fa-map-marker-alt"></i> &nbsp;Quezon City, Philippines </h3>
+		</div>
+	</div>
+	<form action="">
+		<input type="text" placeholder="name" class="box">
+		<input type="email" placeholder="email" class="box">
+		<input type="text" placeholder="project" class="box">
+		<textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+		<button type="submit"> send <i class="fas fa-paper-plane"></i> </button>
+	</form>
+</div>
+</section>
+<!-- Scroll Up Button  -->
+<a href="#intro" class="to-top">
+	<i class="fas fa-arrow-circle-up"></i>
+</a>
+<script src="index.js"></script>
+</body>
+</html>
