@@ -59,26 +59,26 @@ function toggleMode() {
 	let togglerIcon = document.querySelector("#toggler-icon");
 	
 	if (togglerIcon.classList.contains("fa-sun")) {
-		// switch to light-mode
-		documentRoot.style.setProperty("--theme-background", "#fefbf6");
-		documentRoot.style.setProperty("--theme-text-color", "#111");
-		documentRoot.style.setProperty("--sidebar-background", "#e6e8f7");
-		documentRoot.style.setProperty("--component-background", "#c9daf8");
-		documentRoot.style.setProperty("--border-color", "#1c1c1c");
-		documentRoot.style.setProperty("--emphasize-color", "dodgerblue");
-		togglerIcon.classList.remove("fa-sun");
-		togglerIcon.classList.add("fa-moon");
-	}
+    // switch to light-mode
+    documentRoot.style.setProperty("--theme-background", "#fefbf6");
+    documentRoot.style.setProperty("--theme-text-color", "#111");
+    documentRoot.style.setProperty("--sidebar-background", "#c9daf8");
+    documentRoot.style.setProperty("--component-background", "#e6e8f7");
+    documentRoot.style.setProperty("--border-color", "#1c1c1c");
+    documentRoot.style.setProperty("--emphasize-color", "dodgerblue");
+    togglerIcon.classList.remove("fa-sun");
+    togglerIcon.classList.add("fa-moon");
+  }
 
 	else if (togglerIcon.classList.contains("fa-moon")) {
-    // switch to dark-mode
-    documentRoot.style.setProperty("--theme-background", "#010409");
-    documentRoot.style.setProperty("--theme-text-color", "#eee");
-    documentRoot.style.setProperty("--sidebar-background", "#0D1117");
-    documentRoot.style.setProperty("--component-background", "#333");
+		// switch to dark-mode
+		documentRoot.style.setProperty("--theme-background", "#010409");
+		documentRoot.style.setProperty("--theme-text-color", "#eee");
+		documentRoot.style.setProperty("--sidebar-background", "#0D1117");
+		documentRoot.style.setProperty("--component-background", "#333");
 		documentRoot.style.setProperty("--border-color", "#eee4");
 		documentRoot.style.setProperty("--emphasize-color", "cornflowerblue");
-    togglerIcon.classList.remove("fa-moon");
-    togglerIcon.classList.add("fa-sun");
-  }
+		togglerIcon.classList.remove("fa-moon");
+		togglerIcon.classList.add("fa-sun");
+	}
 }
