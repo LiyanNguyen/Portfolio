@@ -16,6 +16,11 @@ let toggleMobileViewMenu = () => {
 	document.querySelector('aside').classList.toggle('toggle');
 }
 
+//======= SIDEBAR REMOVE FUNCTION (FOR SIDEBAR MENU) =======//
+let removeMobileViewMenu = () => {
+  document.querySelector("aside").classList.remove("toggle");
+};
+
 //======= SIDEBAR SCROLLSPY =======//
 let section = document.querySelectorAll("section"); // get all sections
 let menuLinks = document.querySelectorAll("aside menu li a"); // get all sidebar menu links
