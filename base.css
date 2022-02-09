@@ -269,7 +269,7 @@ menu li a.active{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding:1rem 0;
-	padding-left: 3rem;
+	padding-left: 7rem;
 }
 
 .education .box-container .box{
@@ -359,7 +359,8 @@ menu li a.active{
 
 .contact .row .content{
 	flex:1 1 30rem;
-	padding:4rem;
+	padding:0 2rem 2rem 4rem;
+	margin: 2rem;
 	padding-bottom: 0;
 }
 
