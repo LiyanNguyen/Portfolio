@@ -76,6 +76,11 @@ button:hover {
 	background: var(--emphasize-color);
 }
 
+.divider {
+	border-bottom: .1rem solid var(--theme-text-color);
+	margin: 1rem 0;
+}
+
 .heading {
 	text-align: center;
 	margin:0 6rem;
@@ -404,6 +409,11 @@ menu li a.active{
 	padding-right: 1rem;
 	color: cornflowerblue;
 }
+
+.contact .row .content .info h3 a{
+	color: var(--theme-text-color);
+	text-transform: none;
+ }
 
 /*======= MEDIA QUERIES =======*/
 /* tablet and mobile view*/
