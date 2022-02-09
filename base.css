@@ -198,6 +198,7 @@ menu li a.active{
 .intro p{
 	font-size:2rem;
 	padding: 1rem 0;
+	text-transform: none;
 }
 
 /*======= PROFILE SECTION =======*/
