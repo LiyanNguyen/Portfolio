@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root {
-	--theme-background: #010409;
-	--theme-text-color: #eee;
-	--sidebar-background: #0D1117;
-	--component-background: #333;
-	--border-color: #eee4;
-	--emphasize-color: cornflowerblue;
+	--theme-background: #fefbf6;
+	--theme-text-color: #111;
+	--sidebar-background: #c9daf8;
+	--component-background: #e6e8f7;
+	--border-color: #1c1c1c;
+	--emphasize-color: dodgerblue;
 }
 * {
 	font-family: 'Nunito', sans-serif;
@@ -129,6 +129,7 @@ button:hover {
 .to-top.active {
 	opacity: 1; /* show it after some scroll */
 	pointer-events: auto; /* make it clickable after some scroll */
+	transition: all .2s linear;
 }
 
 /*======= SIDEBAR =======*/

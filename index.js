@@ -58,19 +58,7 @@ function toggleMode() {
 	let documentRoot = document.querySelector(":root");
 	let togglerIcon = document.querySelector("#toggler-icon");
 	
-	if (togglerIcon.classList.contains("fa-sun")) {
-    // switch to light-mode
-    documentRoot.style.setProperty("--theme-background", "#fefbf6");
-    documentRoot.style.setProperty("--theme-text-color", "#111");
-    documentRoot.style.setProperty("--sidebar-background", "#c9daf8");
-    documentRoot.style.setProperty("--component-background", "#e6e8f7");
-    documentRoot.style.setProperty("--border-color", "#1c1c1c");
-    documentRoot.style.setProperty("--emphasize-color", "dodgerblue");
-    togglerIcon.classList.remove("fa-sun");
-    togglerIcon.classList.add("fa-moon");
-  }
-
-	else if (togglerIcon.classList.contains("fa-moon")) {
+	if (togglerIcon.classList.contains("fa-moon")) {
 		// switch to dark-mode
 		documentRoot.style.setProperty("--theme-background", "#010409");
 		documentRoot.style.setProperty("--theme-text-color", "#eee");
@@ -80,5 +68,17 @@ function toggleMode() {
 		documentRoot.style.setProperty("--emphasize-color", "cornflowerblue");
 		togglerIcon.classList.remove("fa-moon");
 		togglerIcon.classList.add("fa-sun");
+	}
+
+	else if (togglerIcon.classList.contains("fa-sun")) {
+		// switch to light-mode
+		documentRoot.style.setProperty("--theme-background", "#fefbf6");
+		documentRoot.style.setProperty("--theme-text-color", "#111");
+		documentRoot.style.setProperty("--sidebar-background", "#c9daf8");
+		documentRoot.style.setProperty("--component-background", "#e6e8f7");
+		documentRoot.style.setProperty("--border-color", "#1c1c1c");
+		documentRoot.style.setProperty("--emphasize-color", "dodgerblue");
+		togglerIcon.classList.remove("fa-sun");
+		togglerIcon.classList.add("fa-moon");
 	}
 }
