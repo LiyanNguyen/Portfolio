@@ -17,7 +17,6 @@
 	outline: none; 
 	border:none;
 	text-transform: capitalize;
-	transition: all .2s linear; /* smoothen all default animations */
 }
 
 *::selection {
@@ -49,6 +48,7 @@ body {
 	padding-left: 35rem; /* pad to left based on sidebar size */
 	background-color: var(--theme-background);
 	color: var(--theme-text-color);
+	transition: all .2s linear;
 }
 
 
@@ -65,6 +65,7 @@ button {
 	font-size: 2rem;
 	border-radius: 5rem;
 	color: var(--theme-text-color);
+	transition: all .2s linear;
 }
 
 button i {
@@ -74,11 +75,13 @@ button i {
 
 button:hover {
 	background: var(--emphasize-color);
+	
 }
 
 .divider {
 	border-bottom: .1rem solid var(--theme-text-color);
 	margin: 1rem 0;
+	transition: all .2s linear;
 }
 
 .heading {
@@ -141,6 +144,7 @@ aside{
 	justify-content: center;
 	flex-flow: column;
 	text-align: center;
+	transition: all .2s linear;
 }
 
 aside figure img{
@@ -173,11 +177,13 @@ menu li a{
 	font-size: 2rem;
 	border-radius: 5rem;
 	color: inherit;
+	transition: all .2s linear;
 }
 
 menu li a:hover,
 menu li a.active{
 	background: var(--emphasize-color);
+	transition: all .2s linear;
 }
 
 /*======= INTRODUCTION SECTION =======*/
@@ -231,6 +237,7 @@ menu li a.active{
 .profile .row .info h3 span{
 	padding:0 .5rem;
 	color: var(--theme-text-color);
+	transition: all .2s linear;
 }
 
 .profile .row .counter{
@@ -247,6 +254,7 @@ menu li a.active{
 	padding: 1rem;
 	margin: 1.5rem;
 	border-radius: .8rem;
+	transition: all .2s linear;
 }
 
 .profile .row .counter .box:hover{
@@ -285,6 +293,7 @@ menu li a.active{
 	background:var(--component-background);
 	border-radius: 5rem;
 	padding:.5rem 2.5rem;
+	transition: all .2s linear;
 }
 
 .education .box-container .box h3{
@@ -342,11 +351,12 @@ menu li a.active{
 	padding: .2em .1em;
 	background-color: var(--component-background);
 	font-size: 2rem;
+	transition: all .2s linear;
 }
 
 .project .box-container figure:hover{
 	transform: scale(1.1);
-	/* border: .2rem solid var(--theme-text-color); */
+	transition: all .2s linear;
 }
 
 /*======= CONTACT SECTION =======*/
@@ -380,6 +390,7 @@ menu li a.active{
 	width:100%;
 	color: var(--theme-text-color);
 	border-radius: .5rem;
+	transition: all .2s linear;
 }
 
 .contact .row form .box::placeholder{
@@ -414,6 +425,7 @@ menu li a.active{
 .contact .row .content .info h3 a{
 	color: var(--theme-text-color);
 	text-transform: none;
+	transition: all .2s linear;
  }
 
 /*======= MEDIA QUERIES =======*/
