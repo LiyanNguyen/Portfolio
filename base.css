@@ -213,6 +213,51 @@ menu li a.active{
 	text-transform: none;
 }
 
+.intro>* {
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+}
+
+.intro h3 {
+	animation-name: fadeUp;
+}
+
+.intro h1 {
+	animation-name: fadeUp;
+	animation-delay: .8s;
+}
+
+.intro p {
+	animation-name: fadeIn;
+	animation-delay: 1.6s;
+}
+
+.intro a {
+	animation-name: fadeIn;
+	animation-delay: 2.4s;
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 /*======= PROFILE SECTION =======*/
 .profile .row{
 	display: flex;
