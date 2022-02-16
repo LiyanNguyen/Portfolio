@@ -92,7 +92,7 @@ button:hover {
 	border-bottom: .1rem solid var(--border-color);
 }
 
-.heading span {
+.emphasize-color {
 	color: var(--emphasize-color);
 }
 
@@ -148,7 +148,7 @@ aside{
 	transition: all .2s linear;
 }
 
-aside figure img{
+.user-img{
 	height:17rem;
 	width:17rem;
 	border-radius: 50%;
@@ -156,11 +156,11 @@ aside figure img{
 	margin-bottom: 1rem;
 }
 
-aside figure h3{
+.user-name{
 	font-size: 3.5rem;
 }
 
-aside figure figcaption{
+.user-position{
 	font-size: 2rem;
 }
 
@@ -170,7 +170,7 @@ menu{
 	padding:1rem 3rem;
 }
 
-menu li a{
+.nav-link{
 	display: block;
 	padding:1rem;
 	margin:1.5rem 0;
@@ -181,8 +181,8 @@ menu li a{
 	transition: all .2s linear;
 }
 
-menu li a:hover,
-menu li a.active{
+.nav-link:hover,
+.nav-link.active{
 	background: var(--emphasize-color);
 	transition: all .2s linear;
 }
@@ -195,47 +195,38 @@ menu li a.active{
 	padding:0 15rem;
 }
 
-.intro h3{
+.intro-greet{
 	font-size: 2.5rem;
-}
-
-.intro h1{
-	font-size:5rem;
-}
-
-.intro h1 span{
-	color: var(--emphasize-color);
-}
-
-.intro p{
-	font-size:2rem;
-	padding: 1rem 0;
-	text-transform: none;
-}
-
-.intro>* {
-	opacity: 0;
-	animation-fill-mode: forwards;
-	animation-duration: 1s;
-}
-
-.intro h3 {
 	animation-name: fadeUp;
 }
 
-.intro h1 {
+.intro-name{
+	font-size:5rem;
 	animation-name: fadeUp;
 	animation-delay: .8s;
 }
 
-.intro p {
+.intro-paragraph{
+	font-size:2rem;
+	padding: 1rem 0;
+	text-transform: none;
 	animation-name: fadeIn;
 	animation-delay: 1.6s;
 }
 
-.intro a {
+.intro-button {
 	animation-name: fadeIn;
 	animation-delay: 2.4s;
+}
+
+.intro-greet,
+.intro-name,
+.intro-paragraph,
+.intro-button
+ {
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
 }
 
 @keyframes fadeUp {
@@ -259,7 +250,7 @@ menu li a.active{
 }
 
 /*======= PROFILE SECTION =======*/
-.profile .row{
+.profile-flexbox{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -267,33 +258,33 @@ menu li a.active{
 	padding: 1rem 0;
 }
 
-.profile .row .info{
+.profile-infobox{
 	flex:1 1 100%;
 	padding: 2rem 1rem;
 	padding-left: 6rem;
 }
 
-.profile .row .info h3{
+.profile-info{
 	font-size: 2rem;
 	color: var(--emphasize-color);
 	padding:1rem 0;
 	font-weight: normal;
 }
 
-.profile .row .info h3 span{
+.profile-infokey{
 	padding:0 .5rem;
 	color: var(--theme-text-color);
 	transition: all .2s linear;
 }
 
-.profile .row .counter{
+.technical-infobox{
 	flex:1 1 100%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.profile .row .counter .box{
+.technical-skill{
 	width:25%;
 	background:var(--component-background);
 	text-align: center;
@@ -303,21 +294,21 @@ menu li a.active{
 	transition: all .2s linear;
 }
 
-.profile .row .counter .box:hover{
+.technical-skill:hover{
 	transform: scale(1.1);
 }
 
-.profile .row .counter .box span{
+.technical-skillkey{
 	font-size: 4rem;
 	color: var(--emphasize-color);
 }
 
-.profile .row .counter .box h3{
+.technical-description{
 	font-size: 2rem;
 }
 
 /*======= EDUCATION SECTION =======*/
-.education .box-container{
+.education-infobox{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -326,7 +317,7 @@ menu li a.active{
 	padding-left: 7rem;
 }
 
-.education .box-container .box{
+.education-info{
 	width:100%;
 	margin: 3rem 1rem;
 	padding-left: 4rem;
@@ -334,7 +325,7 @@ menu li a.active{
 	position: relative;
 }
 
-.education .box-container .box span{
+.education-year{
 	font-size: 1.3rem;
 	background:var(--component-background);
 	border-radius: 5rem;
@@ -342,18 +333,19 @@ menu li a.active{
 	transition: all .2s linear;
 }
 
-.education .box-container .box h3{
+.education-school{
 	font-size: 2rem;
 	padding-top: 1.5rem;
 }
 
-.education .box-container .box p{
+.education-detail{
 	font-size: 1.4rem;
 	padding: 1rem 0;
 	text-transform: none;
+	font-style: italic
 }
 
-.education .box-container .box i{
+.education-icon{
 	position: absolute;
 	top:-1.5rem; left:-2.5rem;
 	height:5rem;
@@ -367,7 +359,7 @@ menu li a.active{
 }
 
 /*======= PROJECTS SECTION =======*/
-.project .box-container{
+.project-infobox{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -375,59 +367,84 @@ menu li a.active{
 	padding:2rem 0;
 }
 
-.project .box-container .box{
+.project-box{
 	height: 20rem;
 	width:26rem;
 	border-radius: 1rem;
 	margin:2rem;
 	overflow: hidden;
 	cursor: pointer;
+	transition: all .2s linear;
 }
 
-.project .box-container figure img{
+.project-img{
 	height:80%;
 	width:100%;
 	object-fit: cover;
 }
 
-.project .box-container figure figcaption{
+.project-caption{
 	height:20%;
 	width:100%;
 	text-align: center;
 	padding: .2em .1em;
 	background-color: var(--component-background);
 	font-size: 2rem;
-	transition: all .2s linear;
 }
 
-.project .box-container figure:hover{
+.project-box:hover{
 	transform: scale(1.1);
-	transition: all .2s linear;
 }
 
 /*======= CONTACT SECTION =======*/
-.contact .row{
+.contact-infobox{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.contact .row .content{
+.contact-box{
 	flex:1 1 30rem;
 	padding:0 2rem 2rem 4rem;
 	margin: 2rem;
 	padding-bottom: 0;
 }
 
-.contact .row form{
+.contact-title{
+	text-transform: uppercase;
+	font-size: 3rem;
+	padding-bottom: 2rem;
+}
+
+.contact-details{
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	padding:1rem 0;
+	font-weight: normal;
+	text-transform: none;
+}
+
+.contact-icon{
+	padding-right: 1rem;
+	color: var(--emphasize-color);
+}
+
+.contact-link{
+	color: var(--theme-text-color);
+	text-transform: none;
+	transition: all .2s linear;
+ }
+
+.contact-form{
 	flex:1 1 45rem;
 	padding:2rem;
 	margin:2rem;
 	margin-bottom: 4rem;
 }
 
-.contact .row form .box{
+.contact-forminput{
 	padding:1.5rem;
 	margin:1rem 0;
 	background: var(--component-background);
@@ -439,91 +456,11 @@ menu li a.active{
 	transition: all .2s linear;
 }
 
-.contact .row form .box::placeholder{
+.contact-forminput::placeholder{
 	text-transform: capitalize;
 }
 
-.contact .row form .message{
+.contact-forminput.message{
 	height: 15rem;
 	resize: none;
-}
-
-.contact .row .content .title{
-	text-transform: uppercase;
-	font-size: 3rem;
-	padding-bottom: 2rem;
-}
-
-.contact .row .content .info h3{
-	display: flex;
-	align-items: center;
-	font-size: 2rem;
-	padding:1rem 0;
-	font-weight: normal;
-	text-transform: none;
-}
-
-.contact .row .content .info h3 i{
-	padding-right: 1rem;
-	color: cornflowerblue;
-}
-
-.contact .row .content .info h3 a{
-	color: var(--theme-text-color);
-	text-transform: none;
-	transition: all .2s linear;
- }
-
-/*======= MEDIA QUERIES =======*/
-/* tablet and mobile view*/
-@media (max-width:768px) {
-	html {
-		font-size: 48%;
-	}
-	.theme-toggle {
-		right: 9rem
-	}
-	.intro {
-		padding:1rem 4rem;
-	}
-	
-	body {
-		padding:0;
-	}
-	/* hide sidebar by default */
-	aside {
-		left:-120%;
-	}
-	/* show menu on tablet   */
-	#mobile-menu {
-		display: block;
-	}
-	/* when sidebar is shown */
-	aside.toggle {
-		left:0%;
-	}
-}
-/* mobile devices */
-@media (max-width:480px) {
-	aside {
-		width: 100vw;
-	}
-	.heading {
-		margin:0 3rem;
-	}
-	.profile .row .info {
-		padding-left: 3rem;
-	}
-	.profile .row .counter .box {
-		width: 100%;
-	}
-	.education .box-container .box {
-		width:100%;
-	}
-	.project .box-container .box {
-		width:100%;
-	}
-	.contact .row form {
-		margin:3rem 0;
-	}
 }

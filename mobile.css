@@ -1,0 +1,31 @@
+aside {
+	width: 100vw;
+}
+
+.heading {
+	margin:0 3rem;
+}
+
+.profile-infobox {
+	padding-left: 3rem;
+}
+
+.technical-skill {
+	width: 100%;
+}
+
+.education-info {
+	width:100%;
+}
+
+.education-infobox {
+	padding-left: 4.5rem;
+}
+
+.project-box {
+	width:100%;
+}
+
+.contact-form {
+	margin:3rem 0;
+}

@@ -1,0 +1,30 @@
+html {
+	font-size: 48%;
+}
+
+.theme-toggle {
+	right: 9rem
+}
+
+.intro {
+	padding:1rem 4rem;
+}
+
+body {
+	padding:0;
+}
+
+/* hide sidebar by default */
+aside {
+	left:-120%;
+}
+
+/* show menu on tablet   */
+#mobile-menu {
+	display: block;
+}
+
+/* show sidebar */
+aside.toggle {
+	left:0%;
+}

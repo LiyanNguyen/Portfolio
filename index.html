@@ -7,22 +7,24 @@
 	<!-- Font Awesome CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="tablet.css" media="screen and (max-width: 768px)">
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width: 450px)">
 	<link rel="icon" href="images/icon.png">
 </head>
 <body>
 <!-- Sidebar -->
 <aside>
 	<figure class="user">
-		<img src="images/face.png" alt="">
-		<h3>jose anajao</h3>
-		<figcaption>front end developer</figcaption>
+		<img class="user-img" src="images/face.png" alt="">
+		<h3 class="user-name">jose anajao</h3>
+		<figcaption class="user-position">front end developer</figcaption>
 	</figure>
 	<menu>
-		<li><a href="#intro" class="active" onclick="removeMobileViewMenu()">introduction</a></li>
-		<li><a href="#profile" onclick="removeMobileViewMenu()">profile</a></li>
-		<li><a href="#education" onclick="removeMobileViewMenu()">education</a></li>
-		<li><a href="#project" onclick="removeMobileViewMenu()">projects</a></li>
-		<li><a href="#contact" onclick="removeMobileViewMenu()">contact</a></li>
+		<li><a class="nav-link active" href="#intro" onclick="removeMobileViewMenu()">introduction</a></li>
+		<li><a class="nav-link" href="#profile" onclick="removeMobileViewMenu()">profile</a></li>
+		<li><a class="nav-link" href="#education" onclick="removeMobileViewMenu()">education</a></li>
+		<li><a class="nav-link" href="#project" onclick="removeMobileViewMenu()">projects</a></li>
+		<li><a class="nav-link" href="#contact" onclick="removeMobileViewMenu()">contact</a></li>
 	</menu>
 </aside>
 <!-- Mobile View Menu -->
@@ -33,128 +35,110 @@
 </a>
 <!-- Intro Section -->
 <section class="intro" id="intro">
-	<h3>Hello !</h3>
-	<h1>I'm <span>Jose Anajao</span></h1>
-	<p>A Graduate of University of Wollogong Australia majored in Computer Science. Focusing on front-end web development using industry standards such as: <i>Search Engine Optimization</i>, <i>Responsive Design</i>, <i>Single Page Applications</i>, and <i>E-commerce Websites</i>.</p>
-	<p>I am experienced with modern UI / UX and web development frameworks such as: <i>Bootstrap</i>, <i>Tailwind</i>, <i>Vue</i>, and <i>Svelte</i>.</p>
-	<a href="#profile"><button>my profile <i class="fas fa-user"></i></button> </a>
+	<h3 class="intro-greet">Hello !</h3>
+	<h1 class="intro-name">I'm <span class="emphasize-color">Jose Anajao</span></h1>
+	<p class="intro-paragraph">A Graduate of University of Wollogong Australia majored in Computer Science. Focusing on front-end web development using industry standards such as: <i>Search Engine Optimization</i>, <i>Responsive Design</i>, <i>Single Page Applications</i>, and <i>E-commerce Websites</i>.</p>
+	<p class="intro-paragraph">I am experienced with modern UI / UX and web development frameworks such as: <i>Bootstrap</i>, <i>Tailwind</i>, <i>Vue</i>, and <i>Svelte</i>.</p>
+	<a class="intro-button" href="#profile"><button>my profile <i class="fas fa-user"></i></button> </a>
 </section>
 <!-- Profile Section -->
-<section class="profile" id="profile">
-<h1 class="heading">my <span>profile</span></h1>
-<div class="row">
-	<div class="info">
-		<h3> <span> full name : </span> jose leandrino anajao </h3>
-		<h3> <span> age : </span> 23 </h3>
-		<h3> <span> qualification : </span> Bachelor's Degree in Computer Science </h3>
-		<h3> <span> position : </span> front-end developer </h3>
-		<h3> <span> languages : </span> english, tagalog, japanese </h3>
+<section id="profile">
+<h1 class="heading">my <span class="emphasize-color">profile</span></h1>
+<div class="profile-flexbox">
+	<div class="profile-infobox">
+		<h3 class="profile-info"> <span class="profile-infokey"> full name : </span> jose leandrino anajao </h3>
+		<h3 class="profile-info"> <span class="profile-infokey"> age : </span> 23 </h3>
+		<h3 class="profile-info"> <span class="profile-infokey"> qualification : </span> Bachelor's Degree in Computer Science </h3>
+		<h3 class="profile-info"> <span class="profile-infokey"> position : </span> front-end developer </h3>
+		<h3 class="profile-info"> <span class="profile-infokey"> languages : </span> english, tagalog, japanese </h3>
 		<a href="files/Jose_Leandrino_CV.pdf" download><button> download CV <i class="fas fa-download"></i> </button></a>
 	</div>
-	<div class="counter">
-		<div class="box">
-			<span>HTML5</span>
-			<h3>search engine optimization</h3>
+	<div class="technical-infobox">
+		<div class="technical-skill">
+			<span class="technical-skillkey">HTML5</span>
+			<h3 class="technical-description">search engine optimization</h3>
 		</div>
-		<div class="box">
-			<span>CSS</span>
-			<h3>responsive web design</h3>
+		<div class="technical-skill">
+			<span class="technical-skillkey">CSS</span>
+			<h3 class="technical-description">responsive web design and animations</h3>
 		</div>
-		<div class="box">
-			<span>JavaScript</span>
-			<h3>best practices and coding conventions</h3>
+		<div class="technical-skill">
+			<span class="technical-skillkey">JavaScript</span>
+			<h3 class="technical-description">best practices and coding conventions</span>
 		</div>
-	</div>
-	<div class="counter">
-		<div class="box">
-			<span>Bootstrap</span>
-			<h3>CSS component framework</h3>
+		<div class="technical-skill">
+			<span class="technical-skillkey">Bootstrap</span>
+			<h3 class="technical-description">CSS component framework</span>
 		</div>
-		<div class="box">
-			<span>Tailwind</span>
-			<h3>CSS utility framework</h3>
+		<div class="technical-skill">
+			<span class="technical-skillkey">Tailwind</span>
+			<h3 class="technical-description">CSS utility framework</span>
 		</div>
-		<div class="box">
-			<span>Vue</span>
-			<h3>javaScript front-end framework</h3>
+		<div class="technical-skill">
+			<span class="technical-skillkey">Vue</span>
+			<h3 class="technical-description">javaScript front-end framework</span>
 		</div>
 	</div>
 </div>
 <!-- Education Section -->
 </section>
 <section class="education" id="education">
-<h1 class="heading"> my <span>education</span> </h1>
-<div class="box-container">
-	<div class="box">
-		<i class="fas fa-graduation-cap"></i>
-		<span>2018 - 2021</span>
-		<h3>University of Wollogong Australia</h3>
-		<p style="font-style: italic;">Bachelor's Degree in Computer Science</p>
+<h1 class="heading"> my <span class="emphasize-color">education</span> </h1>
+<div class="education-infobox">
+	<div class="education-info">
+		<i class="education-icon fas fa-graduation-cap"></i>
+		<span class="education-year">2018 - 2021</span>
+		<h3 class="education-school">University of Wollogong Australia</h3>
+		<p class="education-detail">Bachelor's Degree in Computer Science</p>
 	</div>
-	<div class="box">
-		<i class="fas fa-graduation-cap"></i>
-		<span>2016 - 2018</span>
-		<h3>MDIS Singapore</h3>
-		<p style="font-style: italic;">Diploma in Information Technology and Business</p>
+	<div class="education-info">
+		<i class="education-icon fas fa-graduation-cap"></i>
+		<span class="education-year">2016 - 2018</span>
+		<h3 class="education-school">MDIS Singapore</h3>
+		<p class="education-detail">Diploma in Information Technology and Business</p>
 	</div>
-	<div class="box">
-		<i class="fas fa-graduation-cap"></i>
-		<span>2014 - 2015</span>
-		<h3>University of Otago New Zealand</h3>
-		<p style="font-style: italic;">Foudation Programme in Applied Sciences</p>
+	<div class="education-info">
+		<i class="education-icon fas fa-graduation-cap"></i>
+		<span class="education-year">2014 - 2015</span>
+		<h3 class="education-school">University of Otago New Zealand</h3>
+		<p class="education-detail">Foudation Programme in Applied Sciences</p>
 	</div>
 </div>
 </section>
 <!-- Project Section -->
-<section class="project" id="project">
-<h1 class="heading"> my <span>projects</span> </h1>
-<div class="box-container">
-	<figure class="box">
-		<a href="https://liyannguyen.github.io/coffee-shop" target="_blank"><img src="images/proj1.jpeg" alt="asdsad"></a>
-		<figcaption>coffee shop</figcaption>
+<section id="project">
+<h1 class="heading"> my <span class="emphasize-color">projects</span> </h1>
+<div class="project-infobox">
+	<figure class="project-box">
+		<a href="https://liyannguyen.github.io/Coffee-Shop/" target="_blank"><img class="project-img" src="images/proj-1.png" alt="asdsad"></a>
+		<figcaption class="project-caption">the coffee house</figcaption>
 	</figure>
-	<figure class="box">
-		<img src="images/holder.jpg" alt="">
-		<figcaption>coffee shop</figcaption>
-	</figure>
-	<figure class="box">
-		<img src="images/holder.jpg" alt="">
-		<figcaption>coffee shop</figcaption>
-	</figure>
-	<figure class="box">
-		<img src="images/holder.jpg" alt="">
-		<figcaption>coffee shop</figcaption>
-	</figure>
-	<figure class="box">
-		<img src="images/holder.jpg" alt="">
-		<figcaption>coffee shop</figcaption>
-	</figure>
-	<figure class="box">
-		<img src="images/holder.jpg" alt="">
-		<figcaption>coffee shop</figcaption>
+	<figure class="project-box">
+		<a href="https://liyannguyen.github.io/CryptoEZ/" target="_blank"><img class="project-img" src="images/proj-2.png" alt="asdsad"></a>
+		<figcaption class="project-caption">CryptoEZ (WIP)</figcaption>
 	</figure>
 </div>
 <!-- Contact Section -->
 </section>
-<section class="contact" id="contact">
-<h1 class="heading"> <span>contact</span> me </h1>
-<div class="row">
-	<div class="content">
-		<h3 class="title">contact info</h3>
-		<div class="info">
-			<h3> <i class="fas fa-envelope"></i> liyannguyenn@gmail.com </h3>
-			<h3> <i class="fas fa-phone"></i> 09500900929 </h3>
-			<h3> <i class="fas fa-map-marker-alt"></i> &nbsp;Quezon City, Philippines </h3>
+<section id="contact">
+<h1 class="heading"> <span class="emphasize-color">contact</span> me </h1>
+<div class="contact-infobox">
+	<div class="contact-box">
+		<h3 class="contact-title">contact info</h3>
+		<div>
+			<h3 class="contact-details"> <i class="contact-icon fas fa-envelope"></i> liyannguyenn@gmail.com </h3>
+			<h3 class="contact-details"> <i class="contact-icon fas fa-phone"></i> 09500900929 </h3>
+			<h3 class="contact-details"> <i class="contact-icon fas fa-map-marker-alt"></i> &nbsp;Quezon City, Philippines </h3>
 			<div class="divider"></div>
-			<h3> <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/joseanajao" target="_blank">linkedin.com/joseanajao</a></h3>
-			<h3> <i class="fab fa-twitter"></i> <a href="https://twitter.com/JEDDailyEDM" target="_blank">twitter.com/JEDDailyEDM</a></h3>
-			<h3> <i class="fab fa-github"></i>  <a href="https://github.com/LiyanNguyen" target="_blank">github.com/LiyanNguyen</a></h3>
+			<h3 class="contact-details"> <i class="contact-icon fab fa-linkedin"></i> <a class="contact-link" href="https://linkedin.com/in/joseanajao" target="_blank">linkedin.com/joseanajao</a></h3>
+			<h3 class="contact-details"> <i class="contact-icon fab fa-twitter"></i> <a class="contact-link" href="https://twitter.com/JEDDailyEDM" target="_blank">twitter.com/JEDDailyEDM</a></h3>
+			<h3 class="contact-details"> <i class="contact-icon fab fa-github"></i>  <a class="contact-link" href="https://github.com/LiyanNguyen" target="_blank">github.com/LiyanNguyen</a></h3>
 		</div>
 	</div>
-	<form action="https://formsubmit.co/liyannguyenn@gmail.com" method="POST">
-		<input name="name" type="text" placeholder="your name" class="box" required>
-		<input name="email" type="email" placeholder="your email address" class="box" required>
-		<textarea name="message" cols="30" rows="10" class="box message" placeholder="your message"></textarea>
+	<form class="contact-form" action="https://formsubmit.co/liyannguyenn@gmail.com" method="POST">
+		<input name="name" type="text" placeholder="your name" class="contact-forminput" required>
+		<input name="email" type="email" placeholder="your email address" class="contact-forminput" required>
+		<textarea name="message" cols="30" rows="10" class="contact-forminput message" placeholder="your message"></textarea>
 		<input type="hidden" name="_next" value="https://liyannguyen.github.io/Portfolio">
 		<input type="hidden" name="_subject" value="New Message from GitHub Portfolio Site!">
 		<input type="hidden" name="_template" value="table">
