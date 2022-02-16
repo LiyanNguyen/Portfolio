@@ -14,7 +14,6 @@
 	padding:0;
 	box-sizing: border-box;
 	text-decoration: none;
-	outline: none; 
 	border:none;
 	text-transform: capitalize;
 }
@@ -454,6 +453,11 @@ menu{
 	color: var(--theme-text-color);
 	border-radius: .5rem;
 	transition: all .2s linear;
+}
+
+.contact-forminput:focus {
+	outline: .2rem solid var(--emphasize-color);
+	transition: none;
 }
 
 .contact-forminput::placeholder{
