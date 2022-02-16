@@ -18,12 +18,12 @@ let toggleMobileViewMenu = () => {
 
 //======= SIDEBAR REMOVE FUNCTION (FOR SIDEBAR MENU) =======//
 let removeMobileViewMenu = () => {
-  document.querySelector("aside").classList.remove("toggle");
+	document.querySelector("aside").classList.remove("toggle");
 };
 
 //======= SIDEBAR SCROLLSPY =======//
 let section = document.querySelectorAll("section"); // get all sections
-let menuLinks = document.querySelectorAll("aside menu li a"); // get all sidebar menu links
+let menuLinks = document.querySelectorAll(".nav-link"); // get all sidebar menu links
 let sectionHeight = document.querySelector("section").offsetHeight; // get the height of the top menu
 let sectionStartingPointArray = []; // array to store the top-most pixel points of each section
 let menuLinksArray = []; // array to store the menu elements
