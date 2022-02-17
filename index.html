@@ -27,13 +27,17 @@
 		<li><a class="nav-link" href="#project" onclick="removeMobileViewMenu()">projects</a></li>
 		<li><a class="nav-link" href="#contact" onclick="removeMobileViewMenu()">contact</a></li>
 	</menu>
+	<div class="flex-box">
+		<i class="slider-icon fas fa-sun"></i>
+		<label class="switch">
+			<input class="theme-toggle-checkbox" type="checkbox">
+			<span id="dark-theme-toggle" class="slider"></span>
+		</label>
+		<i class="slider-icon fas fa-moon"></i>
+	</div>
 </aside>
 <!-- Mobile View Menu -->
 <div id="mobile-menu" class="fas fa-bars" onclick="toggleMobileViewMenu()"></div>
-<!-- Scroll Up Button  -->
-<a class="theme-toggle" onclick="toggleMode()">
-	<i id="toggler-icon" class="fas fa-moon"></i>
-</a>
 <!-- Intro Section -->
 <section class="intro" id="intro">
 	<h3 class="intro-greet">Hello !</h3>
@@ -121,7 +125,7 @@
 	<figure class="project-box">
 		<a href="https://liyannguyen.github.io/Image-Gallery/" target="_blank"><img class="project-img" src="images/proj-3.png"
 				alt="asdsad"></a>
-		<figcaption class="project-caption">Image Gallery (WIP)</figcaption>
+		<figcaption class="project-caption">Image Gallery</figcaption>
 	</figure>
 </div>
 <!-- Contact Section -->

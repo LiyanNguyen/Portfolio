@@ -106,15 +106,6 @@ button:hover {
 	display: none;
 }
 
-.theme-toggle {
-	position: fixed;
-	top: 2rem; right: 2rem;
-	z-index: 100;
-	cursor: pointer;
-	font-size: 4rem;
-	color:  var(--emphasize-color);
-}
-
 .to-top {
 	position: fixed;
 	bottom: 2rem; right: 2rem;
@@ -183,6 +174,67 @@ menu{
 .nav-link:hover,
 .nav-link.active{
 	background: var(--emphasize-color);
+	transition: all .2s linear;
+}
+
+.flex-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: var(--border);
+	padding: 1rem 0;
+}
+
+/* THEME SWITCH TOGGLE */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 6rem;
+	height: 3.5rem;
+}
+
+.theme-toggle-checkbox { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--component-background);
+	border-radius: 3.5rem;
+	transition: all .2s linear;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 2.5rem;
+	width: 2.5rem;
+	left: .5rem;
+	bottom: .5rem;
+	background-color: var(--theme-text-color);
+	border-radius: 50%;
+	transition: all .2s linear;
+}
+
+input:checked + .slider {
+	background-color: var(--emphasize-color);
+}
+
+input:checked + .slider:before {
+	transform: translateX(2.5rem);
+}
+
+.slider-icon {
+	font-size: 3rem; 
+	padding: 0 2rem; 
+	color: var(--theme-text-color);
 	transition: all .2s linear;
 }
 

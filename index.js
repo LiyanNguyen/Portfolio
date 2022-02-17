@@ -59,11 +59,14 @@ window.onscroll = () => {
 };
 
 //======= DARK-LIGHT MODE FUNCTION =======//
-function toggleMode() {
-	let documentRoot = document.querySelector(":root");
-	let togglerIcon = document.querySelector("#toggler-icon");
-	
-	if (togglerIcon.classList.contains("fa-moon")) {
+let documentRoot = document.querySelector(":root");
+let darkToggleButton = document.querySelector("#dark-theme-toggle");
+let isDarkMode = false;
+
+darkToggleButton.onclick = () => {
+	isDarkMode = !isDarkMode;
+
+	if (isDarkMode) {
 		// switch to dark-mode
 		documentRoot.style.setProperty("--theme-background", "#010409");
 		documentRoot.style.setProperty("--theme-text-color", "#eee");
@@ -71,11 +74,9 @@ function toggleMode() {
 		documentRoot.style.setProperty("--component-background", "#333");
 		documentRoot.style.setProperty("--border-color", "#eee4");
 		documentRoot.style.setProperty("--emphasize-color", "cornflowerblue");
-		togglerIcon.classList.remove("fa-moon");
-		togglerIcon.classList.add("fa-sun");
 	}
-
-	else if (togglerIcon.classList.contains("fa-sun")) {
+	
+	else {
 		// switch to light-mode
 		documentRoot.style.setProperty("--theme-background", "#fefbf6");
 		documentRoot.style.setProperty("--theme-text-color", "#111");
@@ -83,10 +84,8 @@ function toggleMode() {
 		documentRoot.style.setProperty("--component-background", "#e6e8f7");
 		documentRoot.style.setProperty("--border-color", "#1c1c1c");
 		documentRoot.style.setProperty("--emphasize-color", "dodgerblue");
-		togglerIcon.classList.remove("fa-sun");
-		togglerIcon.classList.add("fa-moon");
 	}
-}
+};
 
 //======= FUNCTION TO WAIT FOR ENTIRE FILES TO PARSE FIRST =======//
 let checkIfDocumentFullyLoaded = () => {
