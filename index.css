@@ -7,6 +7,7 @@
 	--component-background: #e6e8f7;
 	--border-color: #1c1c1c;
 	--emphasize-color: dodgerblue;
+	--emphasize-color-2: royalblue;
 }
 * {
 	font-family: 'Nunito', sans-serif;
@@ -268,6 +269,7 @@ input:checked + .slider:before {
 .intro-button {
 	animation-name: fadeIn;
 	animation-delay: 2.4s;
+	width: max-content;
 }
 
 .intro-greet,
@@ -352,6 +354,12 @@ input:checked + .slider:before {
 .technical-skillkey{
 	font-size: 4rem;
 	color: var(--emphasize-color);
+	transition: all .2s linear;
+	cursor: pointer;
+}
+
+.technical-skillkey:hover {
+	color: var(--emphasize-color-2);
 }
 
 .technical-description{
