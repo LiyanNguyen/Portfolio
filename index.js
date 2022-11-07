@@ -68,22 +68,12 @@ darkToggleButton.onclick = () => {
 
 	if (isDarkMode) {
 		// switch to dark-mode
-		documentRoot.style.setProperty("--theme-background", "#010409");
-		documentRoot.style.setProperty("--theme-text-color", "#eee");
-		documentRoot.style.setProperty("--sidebar-background", "#0D1117");
-		documentRoot.style.setProperty("--component-background", "#333");
-		documentRoot.style.setProperty("--border-color", "#eee4");
-		documentRoot.style.setProperty("--emphasize-color", "cornflowerblue");
+		documentRoot.classList.add("darkTheme")
 	}
 	
 	else {
 		// switch to light-mode
-		documentRoot.style.setProperty("--theme-background", "#fefbf6");
-		documentRoot.style.setProperty("--theme-text-color", "#111");
-		documentRoot.style.setProperty("--sidebar-background", "#c9daf8");
-		documentRoot.style.setProperty("--component-background", "#e6e8f7");
-		documentRoot.style.setProperty("--border-color", "#1c1c1c");
-		documentRoot.style.setProperty("--emphasize-color", "dodgerblue");
+		documentRoot.classList.remove("darkTheme");
 	}
 };
 

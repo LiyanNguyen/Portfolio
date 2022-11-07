@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Liyan Anajao</title>
+	<title>Jose Anajao</title>
 	<link rel="preload" href="images/face.png" as="image">
 	<!-- Font Awesome CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="tablet.css" media="screen and (max-width: 768px)">
+	<link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)">
 	<link rel="stylesheet" href="mobile.css" media="screen and (max-width: 450px)">
 	<link rel="icon" href="images/icon.png">
 </head>
@@ -17,8 +17,8 @@
 <aside>
 	<figure class="user">
 		<img class="user-img" src="images/face.png" alt="">
-		<h3 class="user-name">liyan anajao</h3>
-		<figcaption class="user-position">front end developer</figcaption>
+		<h3 class="user-name">jose anajao</h3>
+		<figcaption class="user-position">frontend developer</figcaption>
 	</figure>
 	<menu>
 		<li><a class="nav-link active" href="#intro" onclick="removeMobileViewMenu()">introduction</a></li>
@@ -41,9 +41,18 @@
 <!-- Intro Section -->
 <section class="intro" id="intro">
 	<h3 class="intro-greet">Hello !</h3>
-	<h1 class="intro-name">I'm <span class="emphasize-color">Liyan Anajao</span></h1>
-	<p class="intro-paragraph">A Graduate of University of Wollongong Australia majored in Computer Science. Focusing on front-end web development using industry standards such as: <i>Search Engine Optimization</i>, <i>Responsive Design</i>, <i>Single Page Applications</i>, and <i>E-commerce Websites</i>.</p>
-	<p class="intro-paragraph">I am experienced with modern UI / UX and web development frameworks such as: <i>Bootstrap</i>, <i>Tailwind</i>, <i>Vue</i>, and <i>Svelte</i>.</p>
+	<h1 class="intro-name">I'm <span class="emphasize-color">Jose Anajao</span></h1>
+	<p class="intro-paragraph">A Graduate of University of Wollongong Australia majored in Computer Science. Focusing on frontend web development using industry standards such as:</p>
+		<ul class="skil-list">
+			<li>HTML Search Engine Optimization</li>
+			<li>CSS Responsive Design</li>
+			<li>CSS Animations</li>
+			<li>LESS, SASS <small><i>(CSS Preprocessors)</i></small></li>
+			<li>Tailwind, Bootstrap <small><i>(CSS Frameworks)</i></small> </li>
+			<li>JavaScript, TypeScript</li>
+			<li>Svelte, Vue <small><i>(JavaScript Frameworks)</i></small> </li>
+		</ul>
+	<p class="intro-paragraph">I am also experienced building E-commerce websites and Landing pages using modern UI/UX standards</p>
 	<a class="intro-button" href="#profile"><button>my profile <i class="fas fa-user"></i></button> </a>
 </section>
 <!-- Profile Section -->
@@ -52,11 +61,11 @@
 <div class="profile-flexbox">
 	<div class="profile-infobox">
 		<h3 class="profile-info"> <span class="profile-infokey"> full name : </span> jose leandrino anajao </h3>
-		<h3 class="profile-info"> <span class="profile-infokey"> age : </span> 23 </h3>
+		<h3 class="profile-info"> <span class="profile-infokey"> age : </span> 25 </h3>
 		<h3 class="profile-info"> <span class="profile-infokey"> qualification : </span> Bachelor's Degree in Computer Science </h3>
-		<h3 class="profile-info"> <span class="profile-infokey"> position : </span> front-end developer </h3>
+		<h3 class="profile-info"> <span class="profile-infokey"> position : </span> frontend developer </h3>
 		<h3 class="profile-info"> <span class="profile-infokey"> languages : </span> english, tagalog, japanese </h3>
-		<a href="files/Jose_Leandrino_CV.pdf" download><button> download CV <i class="fas fa-download"></i> </button></a>
+		<a class="downloadCV" href="files/Jose_Leandrino_CV.pdf" download><button> download CV <i class="fas fa-download"></i> </button></a>
 	</div>
 	<div class="technical-infobox">
 		<div class="technical-skill">
@@ -72,6 +81,10 @@
 			<h3 class="technical-description">best practices and coding conventions</span>
 		</div>
 		<div class="technical-skill">
+			<a class="technical-skillkey" href="https://www.typescriptlang.org//" target="_blank">TypeScript</a>
+			<h3 class="technical-description">error prevention and coding stability</span>
+		</div>
+		<div class="technical-skill">
 			<a class="technical-skillkey" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
 			<h3 class="technical-description">CSS component framework</span>
 		</div>
@@ -80,8 +93,12 @@
 			<h3 class="technical-description">CSS utility framework</span>
 		</div>
 		<div class="technical-skill">
+			<a class="technical-skillkey" href="https://svelte.dev/" target="_blank">Svelte</a>
+			<h3 class="technical-description">javaScript frontend framework</span>
+		</div>
+		<div class="technical-skill">
 			<a class="technical-skillkey" href="https://vuejs.org/" target="_blank">Vue</a>
-			<h3 class="technical-description">javaScript front-end framework</span>
+			<h3 class="technical-description">javaScript frontend framework</span>
 		</div>
 	</div>
 </div>
@@ -167,6 +184,7 @@
 			<h3 class="contact-details"> <i class="contact-icon fab fa-linkedin"></i> <a class="contact-link" href="https://www.linkedin.com/in/liyananajao" target="_blank">linkedin.com/in/liyananajao</a></h3>
 			<h3 class="contact-details"> <i class="contact-icon fab fa-twitter"></i> <a class="contact-link" href="https://twitter.com/LiyanAnajao" target="_blank">twitter.com/LiyanAnajao</a></h3>
 			<h3 class="contact-details"> <i class="contact-icon fab fa-github"></i>  <a class="contact-link" href="https://github.com/LiyanNguyen" target="_blank">github.com/LiyanNguyen</a></h3>
+			<h3 class="contact-details"> <i class="contact-icon fas fa-code"></i> <a class="contact-link" href="https://www.frontendmentor.io/profile/LiyanNguyen" target="_blank">frontendmentor.io/profile/LiyanNguyen</a></h3>
 		</div>
 	</div>
 	<form class="contact-form" action="https://formsubmit.co/liyannguyenn@gmail.com" method="POST">
