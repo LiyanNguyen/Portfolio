@@ -6,7 +6,7 @@
 	--sidebar-background: #c9daf8;
 	--component-background: #e6e8f7;
 	--border-color: #1c1c1c;
-	--emphasize-color: dodgerblue;
+	--emphasize-color: cornflowerblue;
 	--emphasize-color-2: royalblue;
 }
 
@@ -16,8 +16,6 @@
 	--sidebar-background: #0D1117;
 	--component-background: #333;
 	--border-color: #eee4;
-	--emphasize-color: cornflowerblue;
-	--emphasize-color-2: royalblue;
 }
 * {
 	font-family: 'Nunito', sans-serif;
@@ -73,7 +71,7 @@ button {
 	cursor: pointer;
 	margin-top: 1rem;
 	font-size: 2rem;
-	border-radius: 5rem;
+	border-radius: 1rem;
 	color: var(--theme-text-color);
 	transition: all .2s linear;
 }
@@ -281,35 +279,12 @@ input:checked + .slider:before {
 }
 
 .intro-paragraph:nth-of-type(2) {
-	animation-delay: 3.2s;
-}
-
-.skil-list {
-	opacity: 0;
-	font-size: 2rem;
-	list-style: "🢒 " inside;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	animation-name: fadeIn;
 	animation-delay: 2.4s;
 }
 
-.skil-list li {
-	cursor: default;
-	transition: .2s all linear;
-	width: max-content;
-}
-
-.skil-list li:hover {
-	margin-left: 1rem;
-	color: var(--emphasize-color);
-}
-
-
 .intro-button {
 	animation-name: fadeIn;
-	animation-delay: 4s;
+	animation-delay: 3.2s;
 	width: max-content;
 }
 
@@ -364,7 +339,6 @@ input:checked + .slider:before {
 .profile-info{
 	font-size: 2rem;
 	color: var(--emphasize-color);
-	/* padding:1rem 0; */
 	font-weight: normal;
 }
 
@@ -384,7 +358,7 @@ input:checked + .slider:before {
 
 .technical-skill{
 	width:20%;
-	background:var(--component-background);
+	border: .2rem solid var(--component-background);
 	text-align: center;
 	padding: 1rem;
 	margin: 1.5rem;
@@ -417,8 +391,8 @@ input:checked + .slider:before {
 .education-infobox{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	justify-content: center;
+	flex-flow: column;
 	padding: 3rem 30rem;
 }
 
@@ -575,9 +549,17 @@ input:checked + .slider:before {
 	resize: none;
 }
 
+.showIn4K {
+	display: none;
+}
+
 @media screen and (min-width: 2500px) {
 	:root {
-		scroll-padding-top: 30vh;
+		scroll-padding-top: 25vh;
+	}
+
+	.showIn4K {
+		display: block;
 	}
 
 	section {
