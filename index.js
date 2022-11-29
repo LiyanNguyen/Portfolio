@@ -87,3 +87,10 @@ let checkIfDocumentFullyLoaded = () => {
 	}
 };
 let checkPageLoad = setInterval(checkIfDocumentFullyLoaded, 100);
+
+// == AOS SETUP ==
+AOS.init();
+
+AOS.init({
+  duration: 750,
+});

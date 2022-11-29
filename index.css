@@ -261,62 +261,20 @@ input:checked + .slider:before {
 
 .intro-greet{
 	font-size: 2.5rem;
-	animation-name: fadeUp;
 }
 
 .intro-name{
 	font-size:5rem;
-	animation-name: fadeUp;
-	animation-delay: .8s;
 }
 
 .intro-paragraph{
 	font-size:2rem;
 	padding: 1rem 0;
 	text-transform: none;
-	animation-name: fadeIn;
-	animation-delay: 1.6s;
-}
-
-.intro-paragraph:nth-of-type(2) {
-	animation-delay: 2.4s;
 }
 
 .intro-button {
-	animation-name: fadeIn;
-	animation-delay: 3.2s;
 	width: max-content;
-}
-
-.intro-greet,
-.intro-name,
-.intro-paragraph,
-.intro-button,
-.skil-list
- {
-	opacity: 0;
-	animation-fill-mode: forwards;
-	animation-duration: 1s;
-}
-
-@keyframes fadeUp {
-	from {
-		opacity: 0;
-		transform: translateY(5rem);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
 }
 
 /*======= PROFILE SECTION =======*/
@@ -368,6 +326,7 @@ input:checked + .slider:before {
 
 .technical-skill:hover{
 	transform: scale(1.1);
+	border: .2rem solid var(--emphasize-color);
 }
 
 .technical-skillkey{

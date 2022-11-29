@@ -11,7 +11,11 @@
 	<link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)">
 	<link rel="stylesheet" href="mobile.css" media="screen and (max-width: 450px)">
 	<link rel="icon" href="images/icon.png">
+	<link href="./aos/aos.css" rel="stylesheet">
+	<script src="./aos/aos.js" defer></script>
+	<script src="index.js" defer></script>
 </head>
+<!-- data-aos="fade-up" data-aos-delay="300" -->
 <body style="display: hidden;">
 <!-- Sidebar -->
 <aside>
@@ -40,25 +44,25 @@
 <div id="mobile-menu" class="fas fa-bars" onclick="toggleMobileViewMenu()"></div>
 <!-- Intro Section -->
 <section class="intro" id="intro">
-	<h3 class="intro-greet">Hello !</h3>
-	<h1 class="intro-name">I'm <span class="emphasize-color">Jose Anajao</span></h1>
-	<p class="intro-paragraph">A Graduate of University of Wollongong Australia majored in Computer Science. Focusing on frontend web development using industry standards such as: <i>Search Engine Optimization</i>, <i>Responsive Design</i>, <i>Web Animations</i>, and other web development frameworks and libraries</p>
-	<p class="intro-paragraph">I am experienced with building Websites, SPAs with modern UI/UX standards.</p>
-	<a class="intro-button" href="#profile"><button>my profile <i class="fas fa-user"></i></button> </a>
+	<h3 class="intro-greet" data-aos="fade-up" data-aos-duration="1000">Hello !</h3>
+	<h1 class="intro-name" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">I'm <span class="emphasize-color">Jose Anajao</span></h1>
+	<p class="intro-paragraph" data-aos="fade-in" data-aos-delay="1500" data-aos-duration="1000">A Graduate of University of Wollongong Australia majored in Computer Science. Focusing on frontend web development using industry standards such as: <i>Search Engine Optimization</i>, <i>Responsive Design</i>, <i>Web Animations</i>, and other web development frameworks and libraries</p>
+	<p class="intro-paragraph" data-aos="fade-in" data-aos-delay="2000" data-aos-duration="1000">I am experienced with building Websites, SPAs with modern UI/UX standards.</p>
+	<a class="intro-button" href="#profile" data-aos="fade-in" data-aos-delay="2500" data-aos-duration="1000"><button>my profile <i class="fas fa-user"></i></button> </a>
 </section>
 <!-- Profile Section -->
 <section id="profile">
-<h1 class="heading">my <span class="emphasize-color">profile</span></h1>
+<h1 class="heading" data-aos="zoom-out">my <span class="emphasize-color">profile</span></h1>
 <div class="profile-flexbox">
 	<div class="profile-infobox">
-		<h3 class="profile-info"> <span class="profile-infokey"> full name : </span> jose leandrino anajao </h3>
-		<h3 class="profile-info"> <span class="profile-infokey"> age : </span> 25 </h3>
-		<h3 class="profile-info"> <span class="profile-infokey"> qualification : </span> Bachelor's Degree in Computer Science </h3>
-		<h3 class="profile-info"> <span class="profile-infokey"> position : </span> frontend developer </h3>
-		<h3 class="profile-info"> <span class="profile-infokey"> languages : </span> english, tagalog, japanese </h3>
-		<a class="downloadCV" href="files/Jose_Leandrino_CV.pdf" download><button> download CV <i class="fas fa-download"></i> </button></a>
+		<h3 class="profile-info" data-aos="fade-right"> <span class="profile-infokey"> full name : </span> jose leandrino anajao </h3>
+		<h3 class="profile-info" data-aos="fade-right"> <span class="profile-infokey"> age : </span> 24 </h3>
+		<h3 class="profile-info" data-aos="fade-right"> <span class="profile-infokey"> qualification : </span> Bachelor's Degree in Computer Science </h3>
+		<h3 class="profile-info" data-aos="fade-right"> <span class="profile-infokey"> position : </span> frontend developer </h3>
+		<h3 class="profile-info" data-aos="fade-right"> <span class="profile-infokey"> languages : </span> english, tagalog, japanese </h3>
+		<a class="downloadCV" href="files/Jose_Leandrino_CV.pdf" download data-aos="fade-up"><button> download CV <i class="fas fa-download"></i> </button></a>
 	</div>
-	<div class="technical-infobox">
+	<div class="technical-infobox" data-aos="zoom-out">
 		<div class="technical-skill">
 			<span class="technical-skillkey">HTML</span>
 			<h3 class="technical-description">search engine optimization</h3>
@@ -91,84 +95,102 @@
 			<a class="technical-skillkey" href="https://vuejs.org/" target="_blank">Vue</a>
 			<h3 class="technical-description">javaScript frontend framework</span>
 		</div>
-		<a href="#education" class="showIn4K"><button>My Education <i class="fas fa-user-graduate"></i></button></a>
+		<a href="#education" class="showIn4K" data-aos="fade-up"><button>My Education <i class="fas fa-user-graduate"></i></button></a>
 	</div>
 </div>
 <!-- Education Section -->
 </section>
 <section class="education" id="education">
-<h1 class="heading"> my <span class="emphasize-color">education</span> </h1>
+<h1 class="heading" data-aos="zoom-out"> my <span class="emphasize-color">education</span> </h1>
 <div class="education-infobox">
-	<div class="education-info">
+	<div class="education-info" data-aos="fade-up">
 		<i class="education-icon fas fa-graduation-cap"></i>
 		<span class="education-year">2018 - 2021</span>
 		<h3 class="education-school">University of Wollongong Australia</h3>
 		<p class="education-detail">Bachelor's Degree in Computer Science</p>
 	</div>
-	<div class="education-info">
+	<div class="education-info" data-aos="fade-up">
 		<i class="education-icon fas fa-graduation-cap"></i>
 		<span class="education-year">2016 - 2018</span>
 		<h3 class="education-school">MDIS Singapore</h3>
 		<p class="education-detail">Diploma in Information Technology and Business</p>
 	</div>
-	<div class="education-info">
+	<div class="education-info" data-aos="fade-up">
 		<i class="education-icon fas fa-graduation-cap"></i>
 		<span class="education-year">2014 - 2015</span>
 		<h3 class="education-school">University of Otago New Zealand</h3>
 		<p class="education-detail">Foudation Programme in Applied Sciences</p>
 	</div>
-	<a href="#project" class="showIn4K"><button>My Projects <i class="far fa-file-code"></i></button></a>
+	<a href="#project" class="showIn4K" data-aos="fade-up"><button>My Projects <i class="far fa-file-code"></i></button></a>
 </div>
 </section>
 <!-- Project Section -->
 <section id="project">
-<h1 class="heading"> Sample <span class="emphasize-color">projects</span> </h1>
+<h1 class="heading" data-aos="zoom-out"> Sample <span class="emphasize-color">projects</span> </h1>
 <div class="project-infobox">
-	<figure class="project-box">
-		<a href="https://liyannguyen.github.io/fylo-dark-page/" target="_blank"><img class="project-img" src="images/proj-1.png" alt=""></a>
-		<figcaption class="project-caption">Fylo Landing Page</figcaption>
-	</figure>
-	<figure class="project-box">
-		<a href="https://friendly-semifreddo-f6d970.netlify.app/" target="_blank"><img class="project-img" src="images/proj-2.png" alt=""></a>
-		<figcaption class="project-caption">Rock, Paper, Scissors</figcaption>
-	</figure>
-	<figure class="project-box">
-		<a href="https://liyannguyen.github.io/calculator-app/" target="_blank"><img class="project-img" src="images/proj-3.png"
-				alt=""></a>
-		<figcaption class="project-caption">Calculator App</figcaption>
-	</figure>
-	<figure class="project-box">
-		<a href="https://liyannguyen.github.io/Image-Gallery/" target="_blank"><img class="project-img" src="images/proj-4.png" alt=""></a>
-		<figcaption class="project-caption">Image Gallery</figcaption>
-	</figure>
-	<figure class="project-box">
-		<a href="https://liyannguyen.github.io/todo-app/" target="_blank"><img class="project-img" src="images/proj-5.png" alt=""></a>
-		<figcaption class="project-caption">Todo list App</figcaption>
-	</figure>
-	<figure class="project-box">
-		<a href="https://liyannguyen.github.io/interactive-job-listings/" target="_blank"><img class="project-img" src="images/proj-6.png" alt=""></a>
-		<figcaption class="project-caption">Job List App</figcaption>
-	</figure>
-	<figure class="project-box">
-		<a href="https://liyannguyen.github.io/testimonials-grid-section/" target="_blank"><img class="project-img" src="images/proj-7.png" alt=""></a>
-		<figcaption class="project-caption">Testimonials Design</figcaption>
-	</figure>
-	<figure class="project-box">
-		<a href="https://liyannguyen.github.io/time-tracking-dashboard/" target="_blank"><img class="project-img" src="images/proj-8.png" alt=""></a>
-		<figcaption class="project-caption">Dashboard Design</figcaption>
-	</figure>
-	<figure class="project-box">
-		<a href="https://liyannguyen.github.io/order-summary-card/" target="_blank"><img class="project-img" src="images/proj-9.png" alt=""></a>
-		<figcaption class="project-caption">Card Design</figcaption>
-	</figure>
-	<a href="#contact" class="showIn4K"><button>My Contact Info <i class="far fa-envelope"></i></button></a>
+	<div data-aos="fade-right">
+		<figure class="project-box">
+			<a href="https://liyannguyen.github.io/fylo-dark-page/" target="_blank"><img class="project-img"
+					src="images/proj-1.png" alt=""></a>
+			<figcaption class="project-caption">Fylo Landing Page</figcaption>
+		</figure>
+	</div>
+	<div data-aos="fade-up" data-aos-delay="150">
+		<figure class="project-box">
+			<a href="https://friendly-semifreddo-f6d970.netlify.app/" target="_blank"><img class="project-img" src="images/proj-2.png" alt=""></a>
+			<figcaption class="project-caption">Rock, Paper, Scissors</figcaption>
+		</figure>
+	</div>
+	<div data-aos="fade-left" data-aos-delay="300">
+		<figure class="project-box">
+			<a href="https://liyannguyen.github.io/calculator-app/" target="_blank"><img class="project-img" src="images/proj-3.png" alt=""></a>
+			<figcaption class="project-caption">Calculator App</figcaption>
+		</figure>
+	</div>
+	<div data-aos="fade-right">
+		<figure class="project-box">
+			<a href="https://liyannguyen.github.io/Image-Gallery/" target="_blank"><img class="project-img" src="images/proj-4.png" alt=""></a>
+			<figcaption class="project-caption">Image Gallery</figcaption>
+		</figure>
+	</div>
+	<div data-aos="fade-up" data-aos-delay="150">
+		<figure class="project-box">
+			<a href="https://liyannguyen.github.io/todo-app/" target="_blank"><img class="project-img" src="images/proj-5.png" alt=""></a>
+			<figcaption class="project-caption">Todo list App</figcaption>
+		</figure>
+	</div>
+	<div data-aos="fade-left" data-aos-delay="300">
+		<figure class="project-box">
+			<a href="https://liyannguyen.github.io/interactive-job-listings/" target="_blank"><img class="project-img" src="images/proj-6.png" alt=""></a>
+			<figcaption class="project-caption">Job List App</figcaption>
+		</figure>
+	</div>
+	<div data-aos="fade-right">
+		<figure class="project-box">
+			<a href="https://liyannguyen.github.io/testimonials-grid-section/" target="_blank"><img class="project-img" src="images/proj-7.png" alt=""></a>
+			<figcaption class="project-caption">Testimonials Design</figcaption>
+		</figure>
+	</div>
+	<div data-aos="fade-up" data-aos-delay="150">
+		<figure class="project-box">
+			<a href="https://liyannguyen.github.io/time-tracking-dashboard/" target="_blank"><img class="project-img" src="images/proj-8.png" alt=""></a>
+			<figcaption class="project-caption">Dashboard Design</figcaption>
+		</figure>
+	</div>
+	<div data-aos="fade-left" data-aos-delay="300">
+		<figure class="project-box">
+			<a href="https://liyannguyen.github.io/order-summary-card/" target="_blank"><img class="project-img" src="images/proj-9.png" alt=""></a>
+			<figcaption class="project-caption">Card Design</figcaption>
+		</figure>
+	</div>
+	<a href="#contact" class="showIn4K" data-aos="fade-up"><button>My Contact Info <i class="far fa-envelope"></i></button></a>
 </div>
 <!-- Contact Section -->
 </section>
 <section id="contact">
-<h1 class="heading"> <span class="emphasize-color">contact</span> me </h1>
+<h1 class="heading" data-aos="zoom-out"><span class="emphasize-color">contact</span> me </h1>
 <div class="contact-infobox">
-	<div class="contact-box">
+	<div class="contact-box" data-aos="fade-up">
 		<h3 class="contact-title">contact info</h3>
 		<div>
 			<h3 class="contact-details"> <i class="contact-icon fas fa-envelope"></i> liyannguyenn@gmail.com </h3>
@@ -181,7 +203,7 @@
 			<h3 class="contact-details"> <i class="contact-icon fas fa-code"></i> <a class="contact-link" href="https://www.frontendmentor.io/profile/LiyanNguyen" target="_blank">frontendmentor.io/profile/LiyanNguyen</a></h3>
 		</div>
 	</div>
-	<form class="contact-form" action="https://formsubmit.co/liyannguyenn@gmail.com" method="POST">
+	<form class="contact-form" action="https://formsubmit.co/liyannguyenn@gmail.com" method="POST" data-aos="fade-left">
 		<input name="name" type="text" placeholder="your name" class="contact-forminput" required>
 		<input name="email" type="email" placeholder="your email address" class="contact-forminput" required>
 		<textarea name="message" cols="30" rows="10" class="contact-forminput message" placeholder="your message"></textarea>
@@ -196,6 +218,5 @@
 <a href="#intro" class="to-top">
 	<i class="fas fa-arrow-circle-up"></i>
 </a>
-<script src="index.js"></script>
 </body>
 </html>
